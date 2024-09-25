@@ -1,0 +1,55 @@
+21/05/2015 - Spotiamb v0.2.1
+
+Changes:
+1.Supports Spotify Connect
+2.Renamed to Spotiamp due to a lawsuit where the name Amp(tm) was trademarked.
+
+30/12/2013 - Spotiamp v0.2
+
+Changes:
+1.Shuffle button was broken
+2.A white rectangle was sometimes shown in the album art view.
+
+26/12/2013 - Spotiamp v0.2 - Release Candidate
+
+Changes:
+1.Skin support. Put the .wsz skin files in a folder named skins/ in
+  the program folder. Select skin on the options menu.
+2.Use mouse scroll wheel to control volume.
+3.Global hotkeys. Enable on the settings menu. The list of hotkeys is:
+  Play:      Ctrl+Alt+Insert
+  Pause:     Ctrl+Alt+Home
+  Stop:      Ctrl+Alt+End
+  Prev:      Ctrl+Alt+PageUp
+  Next:      Ctrl+Alt+PageDn
+  Volume Up: Ctrl+Alt+Up
+  Volume Dn: Ctrl+Alt+Down
+  Forward:   Ctrl+Alt+Right
+  Rewind:    Ctrl+Alt+Left
+  Open File: Ctrl+Alt+L
+  Search:    Ctrl+Alt+S
+4.Added context menu on tracks where you can copy uris or start radio.
+5.Added artist radio, track radio, album radio, and playlist radio.
+6.Better support for https://play.spotify.com links.
+7.Select output device on the settings menu.
+8.Fix scrolling in playlist window.
+9.Remove green dotted line from eq display when it's silent.
+10.International characters in playlist folder names displayed wrong.
+11.Change font size of the playlist font by adding pl.font_size=15 to
+   the INI file. Also rescale automatically on high DPI displays.
+12.Added Album Art window, press Alt+A to open.
+13.Divide the Open menu into pages if it's very long.
+14.Added Replaygain volume normalization. Enable with the Auto button
+   in the equalizer. Right click to select Album or Track normalization.
+   Note: The equalizer must be On for Replaygain to work.
+15.Show DLL load errors when loading plugins.
+16.Better plugin compatibility.
+17.Added toplists. Access on the Open menu.
+18.Equalizer graph displayed incorrectly.
+19.Added an Add To feature to add tracks to the end of playlists.
+20.More hotkeys, for example L opens the Open menu.
+21.The name of the logged in user is shown on the menu.
+
+20/12/2013 - Spotiamp v0.1
+
+First public release.
