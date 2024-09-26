@@ -12,7 +12,7 @@ We also throw in a copy of the original Winamp as well.
 ![Spotiamb](screenshots/main.png)
 ![Spotiamb with AVS visualisations running](screenshots/SpotiambAndAVS.png)
 ![Classic Winamp](screenshots/AlongsideWinampAndMilkdrop.png)
-![Video Clip](https://youtu.be/2Xa-unkhzg4?si=EzAVSJTPVu5Fudlk)
+Watch a YouTube [Video Clip here](https://youtu.be/2Xa-unkhzg4?si=EzAVSJTPVu5Fudlk)
 
 ## Getting it to work
 
