@@ -372,12 +372,17 @@ run_container () {
     fi
 
     # NOTTY rules them all
-    if [ "${NOTTY}" == "yes" ] ; then
-        docker run "${RUN_ARGS[@]}" "${DOCKER_IMAGE}:${IMAGE_TAG}" "${CMD_ARGS[@]}"
+    if [ "${CMD_ARGS[0]}" == "spotiamb" ]; then
+      docker run "${mode}" "${RUN_ARGS[@]}" "${DOCKER_IMAGE}:${IMAGE_TAG}" /usr/bin/wine //Spotiamb.exe
+    elif [ "${CMD_ARGS[0]}" == "spotiamb" ]; then
+      docker run "${mode}" "${RUN_ARGS[@]}" "${DOCKER_IMAGE}:${IMAGE_TAG}" /usr/bin/wine //winamp.exe
     else
-        #docker run "${mode}" "${RUN_ARGS[@]}" --rm "${DOCKER_IMAGE}:${IMAGE_TAG}" "${CMD_ARGS[@]}"
-        docker run "${mode}" "${RUN_ARGS[@]}" --rm "${DOCKER_IMAGE}:${IMAGE_TAG}" /usr/bin/wine //Spotiamb.exe
-    fi
+      if [ "${NOTTY}" == "yes" ] ; then
+        docker run "${RUN_ARGS[@]}" "${DOCKER_IMAGE}:${IMAGE_TAG}" "${CMD_ARGS[@]}"
+      else
+          docker run "${mode}" "${RUN_ARGS[@]}" "${DOCKER_IMAGE}:${IMAGE_TAG}" "${CMD_ARGS[@]}"
+      fi
+    fi;
 }
 
 
